@@ -1,7 +1,5 @@
 from <https://github.com/gyarab/2025_wt_kvapil>
 
-# 2025_WT_Kvapil
-Referát na známou osobnost
 # Clive Sinclair (1940–2021)
 
 ## Mládí a začátky
