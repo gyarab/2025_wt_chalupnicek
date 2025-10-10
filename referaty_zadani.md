@@ -2,7 +2,7 @@
 
 Zde je popsané zadání referátů v Markdown.
 
-Váš pracovní repozitář pro předmět WT musí být na github.com pod organizací GyArab (!) a pojmenujte ho podle šablony: https://github.com/gyarab/2025_wt_&lt;prijmeni&gt;.
+Váš pracovní repozitář pro předmět WT musí být na github.com pod organizací GyArab (!) a pojmenujte ho podle šablony: `https://github.com/gyarab/2025_wt_<prijmeni>`.
 
 tedy např. https://github.com/gyarab/2025_wt_chalupnicek
 
