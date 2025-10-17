@@ -1,4 +1,9 @@
-/* 🐱 Minimal JS – emoji kočka, bez animací/efektů, s komentáři rolí proměnných */
+/* 🐱 Minimal JS – emoji kočka, bez animací/efektů, s komentáři rolí proměnných
+
+ChatGPT prompt (navazující na ./chasingcat.js): 
+ted mi dej minimalistickou verzi pro vyuku zakladu JS bez animaci a a efektu, pouzij misto kocky emoji cat (a jeji odrudy)
+*/
+
 document.addEventListener('DOMContentLoaded', () => {
   // EMOJI: mapování stav → emoji (zobrazení UI)
   const EMOJI = {

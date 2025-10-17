@@ -1,4 +1,18 @@
-/*  🐱 8‑bit kočka nahánějící kurzor – čistý JS, bez assetů */
+/*
+
+    🐱 8‑bit kočka nahánějící kurzor – čistý JS, bez assetů
+
+    ChatGPT prompt:
+    
+    napis v cistem javascriptu pro moderni prohlizec snipet pro vlozeni do vlastniho webu, ktery vlozi do stranky obrazek kocky, ktera lovi kurzor mysi, ne moc rychle, aby to bylo zabavne
+    
+    rozsireni: obrazek kocky je animovany, pro vzdalenost kurzoru mensi nez 50 px kocka utoci. pokud je kurzor dal nez 500px kocka se zastavi, lehne si do klubicka a spi dokud se clovek nepriblizi na mene nez 50px, tim se probudi a zacina lovit.
+    
+    Pro mobil udelej verzi kdy prilozeni prstu udela cerveny puntik (vetsi, aby byl pod prstem malinko videt), na ktery kocka utoci
+    
+    obrazek kocky vytvor ve stylu 8bit games sprite
+
+*/
 (function () {
   'use strict';
 
