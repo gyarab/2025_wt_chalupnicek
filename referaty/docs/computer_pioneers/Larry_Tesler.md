@@ -1,6 +1,6 @@
 from <https://github.com/gyarab/2025_wt_rexa>
 
-# Larry Tesler
+# Larry Tesler 
 
 Larry Tesler byl americký informatik a designér uživatelského rozhraní, který se proslavil zavedením konceptu **cut / copy / paste** (vyjmout, kopírovat, vložit). Během své kariéry pracoval pro významné technologické firmy jako Xerox PARC, Apple, Amazon a Yahoo. Byl zastáncem jednoduchého a intuitivního ovládání počítačů a známý odporem vůči režimům („**no modes**“), které považoval za zbytečně matoucí pro uživatele.
 

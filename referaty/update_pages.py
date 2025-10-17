@@ -9,7 +9,7 @@ import sys
 sys.stdout.reconfigure(encoding="utf-8")
 
 PATH_PREFIX = "../../2025_wt/"
-FILENAME = "README.md"
+FILENAME = "referat.md"
 
 with open("repo_list.txt") as file:
     for repo_name in file.readlines():

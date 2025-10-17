@@ -1,5 +1,6 @@
 from <https://github.com/gyarab/2025_wt_havlicek>
 
+
 # James Gosling
 
 James Gosling (*1955, Kanada*) je kanadský informatik a softwarový inženýr, známý především jako **tvůrce programovacího jazyka Java**. Díky jeho práci se Java stala jedním z nejpoužívanějších jazyků na světě, který běží od mobilních telefonů až po superpočítače.

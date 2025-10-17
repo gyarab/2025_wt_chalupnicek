@@ -1,6 +1,6 @@
 from <https://github.com/gyarab/2025_wt_holcman>
 
-# Seymour Cray: Otec superpočítačů
+# Seymour Cray
 
 Seymour Cray byl americký inženýr a designér počítačů, který je považován za „otce superpočítačů“. Jeho práce zásadně ovlivnila oblast vysokovýkonného výpočetnictví a umožnila pokroky v oblastech jako je vědecký výzkum, meteorologie, jaderná fyzika či simulace složitých systémů.
 

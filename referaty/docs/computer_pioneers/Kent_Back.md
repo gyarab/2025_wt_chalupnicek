@@ -19,4 +19,5 @@ Beck je také autorem řady odborných knih o programování a navrhování soft
 
 - Popularizoval Test-Driven Development ([TDD](https://en.wikipedia.org/wiki/Test-driven_development))
 
+
 - Prosazuje jednoduchý a iterativní přístup k návrhu a vývoji softwaru
