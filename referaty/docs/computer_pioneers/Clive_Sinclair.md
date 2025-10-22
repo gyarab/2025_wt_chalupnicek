@@ -1,6 +1,6 @@
 from <https://github.com/gyarab/2025_wt_kvapil>
 
-# Clive Sinclair (1940–2021)
+# Clive Sinclair
 
 ## Mládí a začátky
 
