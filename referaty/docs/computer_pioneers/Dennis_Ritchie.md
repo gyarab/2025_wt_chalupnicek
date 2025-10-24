@@ -6,7 +6,7 @@ from <https://github.com/gyarab/2025_wt_meca>
 
 Ritchieho přístup ke konstrukci jazyků a systémů ovlivnil celou generaci programátorů a jeho práce se stále používá i po desetiletích. Mnoho dnešních jazyků, jako například [C++](https://cs.wikipedia.org/wiki/C%2B%2B), [Java](https://cs.wikipedia.org/wiki/Java_(programovac%C3%AD_jazyk)) nebo [C#](https://cs.wikipedia.org/wiki/C_Sharp), vychází z principů a syntaxe jazyka C.
 
- ## Život
+## Život
 
 Vystudoval [fyziku](https://cs.wikipedia.org/wiki/Fyzika) a [aplikovanou matematiku](https://cs.wikipedia.org/wiki/Aplikovan%C3%A1_matematika) na [Harvardově univerzitě](https://cs.wikipedia.org/wiki/Harvardova_univerzita). V roce 1967 nastoupil do zaměstnání v počítačovém výzkumném středisku [Bell Labs](https://cs.wikipedia.org/wiki/Bellovy_laborato%C5%99e), pracoval jako ředitel oddělení výzkumu systémového software u společnosti [Lucent Technologies](https://en.wikipedia.org/wiki/Lucent_Technologies).
 
