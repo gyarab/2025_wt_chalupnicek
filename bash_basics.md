@@ -23,5 +23,3 @@
 `echo "nazdar" >> priklad.txt` přes >> to samé jako > ale nepřepíše obsah, ale připojí na konec
 
 `nano priklad.txt` textový editor do CLI
-
-nevim
