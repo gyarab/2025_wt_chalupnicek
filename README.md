@@ -10,3 +10,4 @@ Repozitář obsahuje:
 - První prolinkovaný web na pokusy s Bootrapem v adresáři `prvni_web/`.
 - Tahák na práci s terminálem v souboru `bash_basics.md`.
 
+doplnkovy text
