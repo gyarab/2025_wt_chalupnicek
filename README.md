@@ -6,9 +6,6 @@ Repozitář obsahuje:
 - Skripty pro automatizaci stahování a aktualizace referátů v adresáři `referaty/`.
 - Ukázkový referát v souboru `referat.md`.
 - První HTML soubor v adresáři `prvni_stranka/`.
-- První prolinkovaný webisek na pokusy s Bootrapem v adresáři `prvni_web/`.
+- První prolinkovaný web na pokusy s Bootrapem v adresáři `prvni_web/`.
 - Tahák na práci s terminálem v souboru `bash_basics.md`.
-- nova odrazka
 
-
-doplnkovy text ze druhe hodiny
