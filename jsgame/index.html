@@ -6,27 +6,40 @@
     <title>JS Game</title>
 </head>
 <body>
-    <h1>JS Game</h1>
-    <p>Hadej cislo od 1 do 20</p>
-    <input id="newGameBtn" type="button" value="New Game" onclick="newGame()">
+    <h1>JS Game
+        <b>
+            neco
+        </h1>
+        nepekneho
+    </b>
+    <p>
+        Hadej cislo od 1 do 20
+    </p>
+
+    <input id="newGameBtn" type="button" value="Nova hra" onclick="newGame(); support()">
     <br>
-    <input id="guess" type="number" name="guess" min="0">
+    <input id="guess" type="number" name="guess">
     <input id="guessBtn" type="button" value="Zkus">
 
     <p>
-        Pocet pokusu <span id="attempts">0</span>
+        Počet pokusů <span id="attempts">0</span>.
     </p>
 
     <script>
         let secretNumber
         let attempts
 
+        const attemptsEl = document.getElementById('attempts')
+
         function newGame() {
-            secretNumber = Math.floor(Math.random() * 20) + 1 
+            secretNumber = Math.floor(Math.random() * 20) + 1
             attempts = 0
-            console.log('--- NOVA HRA ---')
+            attemptsEl.textContent = attempts
+
+            console.log('--- NEW GAME ---')
             console.log('tajne cislo je', secretNumber)
         }
+
         function checkGuess() {
             attempts++
             const attemptsEl = document.getElementById('attempts')
@@ -38,15 +51,23 @@
             // TODO funkce, wont fix
         }
 
-        document.getElementById("guessBtn").addEventListener('click', checkGuess)
-        document.getElementById("guess").addEventListener('keydown', function(e) {
-            if (e.key == 'Enter') {
+        document.getElementById('guessBtn').addEventListener('click', checkGuess)
+        document.getElementById('guess').addEventListener('keydown', function (e) {
+            if (e.key === 'Enter') {
                 checkGuess()
+                e.srcElement.value = ''
             }
         })
 
-        newGame()
+        function hlaska() {
+            alert('pospes')
+        }
 
+        function support() {
+            window.setTimeout(hlaska, 3000)
+        }
+
+        newGame()
     </script>
 </body>
 </html>
