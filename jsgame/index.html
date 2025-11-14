@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Game</title>
+</head>
+<body>
+    <h1>JS Game</h1>
+    <p>Hadej cislo od 1 do 20</p>
+    <input id="newGameBtn" type="button" value="New Game" onclick="newGame()">
+    <br>
+    <input id="guess" type="number" name="guess" min="0">
+    <input id="guessBtn" type="button" value="Zkus">
+
+    <p>
+        Pocet pokusu <span id="attempts">0</span>
+    </p>
+
+    <script>
+        let secretNumber
+        let attempts
+
+        function newGame() {
+            secretNumber = Math.floor(Math.random() * 20) + 1 
+            attempts = 0
+            console.log('--- NOVA HRA ---')
+            console.log('tajne cislo je', secretNumber)
+        }
+        function checkGuess() {
+            attempts++
+            const attemptsEl = document.getElementById('attempts')
+
+            const inputEl = document.getElementById('guess')
+            const guess = Number(inputEl.value)
+
+            attemptsEl.textContent = attempts
+            // TODO funkce, wont fix
+        }
+
+        document.getElementById("guessBtn").addEventListener('click', checkGuess)
+        document.getElementById("guess").addEventListener('keydown', function(e) {
+            if (e.key == 'Enter') {
+                checkGuess()
+            }
+        })
+
+        newGame()
+
+    </script>
+</body>
+</html>
