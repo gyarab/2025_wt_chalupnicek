@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kocko-hotel.example/sitemap.xml

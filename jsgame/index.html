@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Game</title>
+
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            text-align: center;
+        }
+        input {
+            padding: 3px;
+            margin: 6px;
+            font-size: 1rem;
+            width: 80px;
+        }
+        button {
+            padding: 6px 12px;
+            font-size: 1rem;
+            margin: 5px;
+            cursor: pointer;
+        }
+        #message {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>JS Game</h1>
+    <p id="message">
+        Hádej číslo od 1 do 20
+    </p>
+
+    <input id="guess" type="number" name="guess">
+    <input id="guessBtn" type="button" value="Zkus">
+    <br>
+    <input id="newGameBtn" type="button" value="Nova hra" onclick="newGame()">
+
+    <p>
+        Počet pokusů <span id="attempts">0</span>.
+    </p>
+
+    <script>
+        let secretNumber
+        let attempts
+
+        const attemptsEl = document.getElementById('attempts')
+        const messageEl = document.getElementById('message')
+
+        function newGame() {
+            support() // podpora uzivatelu
+            secretNumber = Math.floor(Math.random() * 20) + 1
+            attempts = 0
+            attemptsEl.textContent = attempts
+
+            console.log('--- NEW GAME ---')
+            console.log('tajne cislo je', secretNumber)
+        }
+
+        function checkGuess() {
+            attempts++
+            const attemptsEl = document.getElementById('attempts')
+
+            const inputEl = document.getElementById('guess')
+            const guess = Number(inputEl.value)
+
+            attemptsEl.textContent = attempts
+            // TODO funkce pro kontrolu hadani cisla a vypis vysledku do elementu messageEl
+        }
+
+        document.getElementById('guessBtn').addEventListener('click', checkGuess)
+        document.getElementById('guess').addEventListener('keydown', function (e) {
+            if (e.key === 'Enter') {
+                checkGuess()
+                e.srcElement.value = ''
+            }
+        })
+
+        function hlaska() {
+            alert('Pospěšte si, hra běží!')
+        }
+
+        function support() {
+            // zobrazeni hlasky po 10 sekundach
+            window.setTimeout(hlaska, 10000)
+        }
+
+        newGame()
+    </script>
+</body>
+</html>
