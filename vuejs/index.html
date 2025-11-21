@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS</title>
+    
+</head>
+<body>
+    <h1>VueJS</h1>
+    <a href="https://vuejs.org/guide/introduction" target="_blank">VueJS docs</a>
+
+    <div id="app">
+        {{ message }}
+        <br>
+        {{'Random number: ' + Math.ceil(Math.random()*6) }}
+        <br>
+        <button @click="count++">Kliknuto: {{ count }}</button>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+
+    <script>
+
+    const app = Vue.createApp({
+        data() {
+        return {
+            message: "Hello World!",
+            count: 0
+        }
+        }
+    })
+
+    app.mount('#app')
+
+    </script>
+</body>
+</html>
