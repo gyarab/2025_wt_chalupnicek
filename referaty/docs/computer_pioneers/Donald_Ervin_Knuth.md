@@ -17,3 +17,4 @@ Narodil se v roce 1938 v Milwaukee v americkém státě Wisconsin. Původně se 
 - Národní vyznamenání pro vědu (1979)
 
 ![Donald ervin Knuth](https://catonmat.net/wp-content/uploads/2010/02/young-donald-knuth-ibm-650-1958.jpg)
+noniic
