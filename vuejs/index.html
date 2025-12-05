@@ -14,7 +14,7 @@
             <a href="https://vuejs.org/guide/introduction" target="_blank">VueJS docs</a> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis et harum quaerat voluptates ipsa alias voluptas odit! Quae a suscipit numquam. Officiis modi reprehenderit repudiandae? Consequuntur nisi at ullam molestias!
         </p>
         <div id="app">
-            <div class="card p-4">
+            <div class="card p-4 mb-3">
                 <form>
                     <div class="mb-3">
                         <label for="name">Jméno astronauta</label>
@@ -47,6 +47,18 @@
                 {{'Random number: ' + Math.ceil(Math.random()*6) }}
                 <br>
                 <button v-on:click="count++">Kliknuto: {{ count }}</button> -->
+            </div>
+            <div class="card p-3">
+                <h2>Palubní lístek</h2>
+                <p>
+                    Jméno: <strong>Tester Testovič</strong><br>
+                    Destinace: <strong>Mars</strong><br>
+                    Počet dní: <strong>3</strong><br>
+                    Odhadovaná cena: <strong>2400 kreditů</strong>
+                </p>
+                <p class="text-muted">
+                    Pokud si to rozmyslíš, můžeš formulář upravit a palubní lístek se automaticky aktualizuje.
+                </p>
             </div>
         </div>
     </div>
