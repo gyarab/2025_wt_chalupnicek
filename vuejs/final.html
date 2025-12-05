@@ -102,9 +102,8 @@
 <!-- Vue z CDN -->
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script>
-  const { createApp, computed } = Vue;
 
-  const app = createApp({
+  const app = Vue.createApp({
     data() {
       return {
         trip: {
