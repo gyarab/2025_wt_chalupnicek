@@ -1,4 +1,4 @@
-# 2024 WT Chalupníček
+# 2025 WT Chalupníček
 
 Toto je pracovní repozitář pro předmět Webové technologie 2.F na Gymnáziu Arabská, školní rok 2025/2026.
 
@@ -8,4 +8,7 @@ Repozitář obsahuje:
 - První HTML soubor v adresáři `prvni_stranka/`.
 - První prolinkovaný web na pokusy s Bootrapem v adresáři `prvni_web/`.
 - Tahák na práci s terminálem v souboru `bash_basics.md`.
+- Microsite "Kočičí hotel" v Bootstrapu v `microsite/`
+- Hru hádání čísel ve vanilla JavaScriptu v `jsgame/`
+- Web front-end - validace formuláře VueJS + Bootstrap v `vuejs/`
 
