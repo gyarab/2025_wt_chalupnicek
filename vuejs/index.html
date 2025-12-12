@@ -15,14 +15,17 @@
         </p>
         <div id="app">
             <div class="card p-4 mb-3">
-                <form>
+                <form @submit.prevent="handleForm()">
                     <div class="mb-3">
                         <label for="name">Jméno astronauta</label>
-                        <input class="form-control" type="text" id="name" name="name">
+                        <input v-model="trip.name" placeholder="Jan Novak" class="form-control" type="text" id="name" name="name" @keyup="validate()">
+                        <div v-if="errors.name" class="text-danger small">
+                            {{ errors.name }}
+                        </div>
                     </div>
                     <div class="mb-3">
                         <label for="planet">Destinace</label>
-                        <select class="form-select" id="planet" name="planet">
+                        <select v-model="trip.destination" class="form-select" id="planet" name="planet">
                             <option disabled value="">Vyber planetu…</option>
                             <option value="Mars">Mars – pro introverty, co nemusí kyslík</option>
                             <option value="Měsíc">Měsíc – víkendovka s dobrou Wi-Fi</option>
@@ -32,14 +35,14 @@
                     </div>
                     <div class="mb-3">
                         <label for="days">Počet dní</label>
-                        <input class="form-control" type="number" id="days" name="days">
+                        <input v-model="trip.days" class="form-control" type="number" id="days" name="days">
                     </div>
                     <div class="mb-3">
-                        <input class="form-check-input" type="checkbox" id="terms">
+                        <input v-model="trip.accepted" class="form-check-input" type="checkbox" id="terms">
                         <label class="form-check-label" for="terms">Souhlasím s podmínkami</label>
                     </div>
                     <div class="pb-3">
-                        <button class="btn btn-primary w-100" :disabled="!isValid" type="submit">Odeslat</button>
+                        <button class="btn btn-primary w-100"  type="submit">Odeslat</button>
                     </div>
                     <p class="text-muted">
                         Tento formulář nikam neposílá — vše se děje v prohlížeči.
@@ -54,9 +57,9 @@
             <div class="card p-3">
                 <h2>Palubní lístek</h2>
                 <p>
-                    Jméno: <strong>Tester Testovič</strong><br>
-                    Destinace: <strong>Mars</strong><br>
-                    Počet dní: <strong>3</strong><br>
+                    Jméno: <strong>{{ trip.name }}</strong><br>
+                    Destinace: <strong>{{ trip.destination }}</strong><br>
+                    Počet dní: <strong>{{ trip.days }}</strong><br>
                     Odhadovaná cena: <strong>2400 kreditů</strong>
                 </p>
                 <p class="text-muted">
@@ -80,13 +83,26 @@
                     destination: "",
                     days: 1,
                     accepted: false,
-                }
+                },
+                errors: {}
 
             }
         },
         computed: {
             isValid() {
-                return true
+                return !!this.trip.name
+            }
+        },
+        methods: {
+            validate() {
+                this.errors = {}
+                if (!this.trip.name) {
+                    this.errors.name = "Jmeno je povinne"
+                }
+            },
+            handleForm() {
+                console.log('handling form')
+                this.validate()
             }
         }
     })
